@@ -1,0 +1,407 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  @apply w-0;
+}
+
+body {
+  @apply bg-white dark:bg-slate-800;
+  overflow-x:hidden ;
+}
+
+/*Horizontal Scrollbar*/
+
+.left-arrow,
+.right-arrow {
+  @apply cursor-pointer bg-transparent outline-none border-none flex items-center justify-between text-indigo-700 text-2xl rounded absolute -bottom-5 transition hover:scale-125;
+}
+
+.exercise-card {
+  @apply w-72 sm:w-80 min-h-[445px] bg-gray-100 border-t-8 border-indigo-700 rounded-b-lg flex flex-col justify-between pb-3 shadow-lg transition hover:scale-105 dark:border-indigo-500 dark:bg-gray-700;
+}
+
+.pagination-navigation {
+  @apply py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white;
+}
+
+.pagination-btn {
+  @apply py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white;
+}
+
+.pagination-btn.active {
+  @apply text-indigo-600 bg-indigo-50 hover:bg-indigo-100 hover:text-indigo-700 dark:bg-gray-700 dark:text-white;
+}
+
+.svg-icon path {
+  @apply fill-indigo-700 dark:fill-indigo-500;
+}
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* .container {
+  max-width: 1300px;
+
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  position: relative;
+} */
+
+/* .header {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+} */
+
+.col-left{
+  float: left;
+  width: 65%;
+}
+.col-right{
+  float: left;
+  width: 35%;
+  padding-left: 1rem;
+}
+.col-bot{
+  float: left;
+  width: 100%;
+}
+
+.mealItems {
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper-card {
+  /* background-color: #2e3039; */
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  /* 35363a */
+}
+
+.wrapper-card-bot{
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+
+  /* 35363a */
+}
+.wrapper-card-calculate-rightCol{
+  /* min-height: 38rem; */
+  max-height:38rem;
+  overflow:scroll;
+  overflow-x:hidden;
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  /* 35363a */
+}
+.wrapper-card-food-list {
+  /* min-height: 38rem; */
+  max-height:38rem;
+  overflow:scroll;
+  overflow-x:hidden;
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+/* height:800px;
+  overflow:scroll;
+  overflow-x:hidden; */
+.foodList {
+  /* display: flex;
+  flex-wrap: wrap;
+  gap:0.5rem; */
+  
+  display: grid;
+  grid-gap: 0.9rem;
+  grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+}
+
+.food-card {
+  min-height:11.4rem;
+  min-width:10rem;
+
+  border-radius: 6px;
+  background-color: #1f6e77;
+  border: 2px solid rgb(4, 7, 12);
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+.food-card:hover {
+  background-color: #eeb462;
+}
+.food-nutrients {
+  /* place nutrient info cards in flex box, last element will expand to fill page */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  color:rgb(249, 152, 152);
+
+     /* place nutrient info cards grid */
+   /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(3rem, 1fr));
+  gap:0.1rem;
+  flex-direction: row; */
+}
+.food-nutrients p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size:0.98rem;
+  gap:0.15rem;
+  color: rgb(255, 255, 255);
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-radius: 0.3rem;
+  gap: 0.2rem;
+  background-color:#1f2028;
+  
+  flex: 1;
+}
+.total-food-nutrients {
+  min-width:8rem;
+  min-height:3rem;
+  /* place nutrient info cards in flex box, last element will expand to fill page */
+  display: flex;
+  flex-wrap: no-wrap;
+  flex:1;
+  gap: 0.3rem;
+
+   /* place nutrient info cards grid */
+  
+   /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(3rem, 1fr));
+  gap:0.1rem;
+  flex-direction: row; */
+}
+.total-food-nutrients p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size:0.9rem;
+  gap:0.3rem;
+  color: rgb(255, 255, 255);
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.25rem;
+  border-radius: 0.2rem;
+  background-color:#1f6e77;
+  /* background-color: wheat; */
+  
+  flex: 1;
+}
+.total-food-nutrients .totals-col-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.25rem;
+}
+.total-food-nutrients .totals-col-2 p{
+  font-size:1.2rem;
+}
+.delete-icon { 
+  cursor: pointer;
+}
+.add-btn {
+  font-size: 0.9rem;
+  padding: 0.2rem;
+  width: 5rem;
+  flex: 1;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid black;
+  background-color: rgb(215, 205, 205);
+  float: center;
+}
+.food-add {
+  background-color: #40c0f0;
+  width: 1.5rem;
+  cursor:pointer;
+}
+.food-add:hover{
+  background-color: #2ba9d6;
+}
+.food-remove {
+  background-color: #f04f40;
+  width: 1.5rem;
+  cursor:pointer;
+  font-size: 1rem;
+}
+.food-remove:hover {
+  background-color: #d44032;
+}
+
+.add-btn:hover {
+  background-color: rgb(253, 245, 245);
+  cursor:pointer;
+}
+
+.new-card {
+  min-height:140px;
+  min-width:  8rem;
+  border-radius: 10px;
+  border: 2px dashed rgb(87, 86, 86);
+  padding: 1rem;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  cursor: pointer;
+}
+
+.new-card:hover {
+  min-height:140px;
+  min-width:  8rem;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 1rem;
+  background-color: #757995;
+  color: rgb(253, 245, 245);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  cursor: pointer;
+}
+
+.nutrient-totals {
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+.nutrient-totals p {
+  color: red;
+  padding: 0.5rem;
+  background-color:#1f2028;
+  box-shadow: 1px 1px 5px #121212;
+  border-radius: 6px;
+  border: 2px dashed rgb(255, 255,);
+  margin-bottom: 0.1rem;
+}
+
+.button.badge {
+  background-color: #b05252;
+  border:none;
+  color:white;
+  width: 1.5rem;
+}
+
+.totals-row {
+    display: flex;
+    padding:0.2rem;
+    flex-wrap: no-wrap;
+
+    border-radius:6px;
+    gap:0.1rem;
+    /* margin-bottom: 1px;; */
+}
+.totals-bg {
+  background-color: rgb(47, 48, 51);
+  padding: 0.3rem;
+  border-radius: 6px;
+}
+.totals-col-3 {
+  flex-basis: 35%;
+  padding:0.3rem;
+}
+.totals-col-2 {
+  flex-basis: 20%;
+}
+.totals-col-1 {
+  flex-basis: 15%;
+  padding:0.3rem;
+}
+
+.totals-btns {
+  display: flex;
+  padding:0.2rem;
+  gap:0.2rem;
+}
+.totals-title{
+  display: flex;
+    padding:0.2rem;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    gap:0.1rem;
+}
+.modal-title{
+  display: flex;
+  justify-content: space-between;
+}
+.hoverText  {
+  white-space:no-wrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  flex-basis: 35%;
+  padding:0.1rem;
+}
+.hoverText:hover {
+  overflow: visible; 
+  white-space: normal;
+  height:auto;  /* just added this line */
+}
+@media screen and (max-width: 1100px) {
+  .col-left, .col-right {   
+    width: 100%;
+    padding: 0;
+  }
+  .col1, col2 {
+    width:100%;
+  }
+}
+
+
+
+/* Clear floats after the columns
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */

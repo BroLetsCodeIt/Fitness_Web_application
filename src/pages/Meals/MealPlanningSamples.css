@@ -1,0 +1,66 @@
+.meal-planning-samples {
+    position: relative;
+    width: 650px;
+    padding: 3.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .meal-planning-samples article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+  
+  .meal-planning-samples h2 {
+    color: black;
+    font-size: desktopHeading;
+    font-family: raleway;
+    margin-bottom: 2rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+  }
+  
+  .meal-planning-samples table {
+    font-size: 16px;
+    font-family: 'poppins';
+  }
+  
+  .meal-planning-samples table thead,
+  .meal-planning-samples table tbody {
+    width: 100%;
+  }
+  
+  .meal-planning-samples table tr {
+    width: 100%;
+  }
+  
+  .meal-planning-samples table td:nth-child(1) {
+    width: 200px;
+  }
+  
+  .meal-planning-samples table td:nth-child(2) {
+    width: 400px;
+  }
+  
+  .meal-planning-samples table td {
+    padding: .75rem 1rem;
+  }
+  
+  .meal-planning-samples table .heading-row {
+    color: White;
+    background-color: orange;
+    font-weight: 500;
+  }
+  
+  .meal-planning-samples table .total {
+    background-color: rgb(215, 215, 215);
+    font-weight: 600;
+  }
+  
+  .meal-planning-samples table .plan-row {
+    background-color: rgb(238, 238, 238);
+  }
