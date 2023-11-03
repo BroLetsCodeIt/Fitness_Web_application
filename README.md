@@ -28,7 +28,7 @@ It allows you to search exercises with respect to body parts and gave you more d
 
 ## How to Clone the website
 ```sh
-git clone https://github.com/BroLetsCodeIt/Frontend.git
+git clone https://github.com/BroLetsCodeIt/Fitness_Web_application.git
 ```
 ```sh
 npm i
