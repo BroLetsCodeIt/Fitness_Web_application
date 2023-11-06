@@ -15,7 +15,7 @@ const Footer = () => {
           <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4 dark:text-gray-100">
             © 2023 Fitness Fast —
             <a
-              href="https://twitter.com/md_tehseen_khan"
+              href="https://twitter.com"
               className="text-gray-600 ml-1 dark:text-gray-100"
               rel="noopener noreferrer"
               target="_blank"
@@ -26,7 +26,7 @@ const Footer = () => {
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
             <a
               className="text-gray-500 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400"
-              href="https://www.facebook.com/muhammadtehseen.khan.986"
+              href="https://www.facebook.com"
               target="_blank"
             >
               <svg
@@ -42,7 +42,7 @@ const Footer = () => {
             </a>
             <a
               className="ml-3 text-gray-500 dark:text-gray-300 hover:text-cyan-700 dark:hover:text-cyan-400"
-              href="https://twitter.com/md_tehseen_khan"
+              href="https://twitter.com"
               target="_blank"
             >
               <svg
@@ -58,7 +58,7 @@ const Footer = () => {
             </a>
             <a
               className="ml-3 text-gray-500 dark:text-gray-300 hover:text-pink-700 dark:hover:text-pink-400"
-              href="https://www.instagram.com/md_tehseen_khan/"
+              href="https://www.instagram.com"
               target="_blank"
             >
               <svg
@@ -76,7 +76,7 @@ const Footer = () => {
             </a>
             <a
               className="ml-3 text-gray-500 dark:text-gray-300 hover:text-blue-900 dark:hover:text-blue-500"
-              href="https://linkedin.com/in/md-tehseen-khan"
+              href="https://linkedin.com/in/"
               target="_blank"
             >
               <svg

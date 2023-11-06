@@ -47,7 +47,7 @@ export default function FetchFoodApi() {
         ></input>
         <button
           onClick={fetchData}
-          style={{ borderRadius: "6px", padding: "2px" }}
+          style={{ borderRadius: "6px", padding: "2px", color:'white' }}
         >
           Fetch food
         </button>

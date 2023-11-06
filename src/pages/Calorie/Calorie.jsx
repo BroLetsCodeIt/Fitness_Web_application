@@ -177,7 +177,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App ">
+      <div className="App">
         <Calculator 
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit}

@@ -13,8 +13,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 
     <BrowserRouter>
      <Auth0Provider
-     domain="dev-ysdt6rygj48hyvg8.us.auth0.com"
-     clientId="O6LHsrU84nnX8n8xNQZXER32Jlytoood"
+     domain={import.meta.env.VITE_REACT_APP_DOMAIN}
+     clientId={import.meta.env.VITE_REACT_APP_CLIENT_ID}
      authorizationParams={{
        redirect_uri: window.location.origin
      }}

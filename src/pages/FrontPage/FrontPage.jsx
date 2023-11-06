@@ -10,9 +10,9 @@ const FrontPage = () => {
     <div>
       <HeroBanner/>
       <Services/>
-      <Static/>
-      <Testimonails/>
-      <Pricing/>
+      {/* <Static/> */}
+      {/* <Testimonails/> */}
+      {/* <Pricing/> */}
       <ContactUs/>
     </div>
   )

@@ -12,7 +12,7 @@ const Static = () => {
             Our Currrent Statistics
           </h1>
           <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus magnam magni a aperiam error voluptates harum! Pariatur, vel. Unde quae quas commodi, odit molestias odio, eligendi soluta asperiores assumenda quo facere eos? Delectus cumque unde, at quaerat aperiam non, quasi earum exercitationem omnis similique voluptatibus hic! Voluptatum nesciunt dolorum numquam.
+          Our gym is proud to serve a community of 1,200 dedicated members who visit us regularly. In a typical month, we record an impressive 10,000 gym visits, highlighting the commitment of our members to their fitness goals. Our members have collectively lifted an astonishing 50 tons of weight, a testament to their strength and determination. Additionally, our gym-goers have logged a combined total of 1,000 hours of cardio workouts, demonstrating their commitment to a healthy and active lifestyle.
           </p>
         </div>
         <div class="flex flex-wrap -m-4 text-center">

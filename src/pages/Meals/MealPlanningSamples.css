@@ -1,10 +1,12 @@
 .meal-planning-samples {
     position: relative;
-    width: 650px;
+    /* width: 650px; */
+    width: 100%;
     padding: 3.5rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   
   .meal-planning-samples article {
@@ -13,25 +15,34 @@
     flex-direction: column;
     justify-content: center;
     margin-bottom: 5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   
   .meal-planning-samples h2 {
     color: black;
     font-size: desktopHeading;
-    font-family: raleway;
+    /* font-family: raleway; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-bottom: 2rem;
-    font-weight: 800;
+    font-size: 2rem;
+    font-weight: 500;
     letter-spacing: 1.5px;
+    text-transform: capitalize;
   }
   
   .meal-planning-samples table {
     font-size: 16px;
-    font-family: 'poppins';
+    text-align: center;
+    border: 1px solid black;
+    /* font-family: 'poppins'; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   
   .meal-planning-samples table thead,
   .meal-planning-samples table tbody {
+    border-radius: 1rem;
     width: 100%;
+    border: 1px solid black;
   }
   
   .meal-planning-samples table tr {

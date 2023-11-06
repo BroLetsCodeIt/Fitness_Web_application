@@ -11,6 +11,8 @@ export default defineConfig({
     'process.env.VITE_REACT_APP_EDAMAM_APP_ID':JSON.stringify(process.env.VITE_REACT_APP_EDAMAM_APP_ID),
     'process.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEYP':JSON.stringify(process.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEY),
     'process.env.VITE_REACT_APP_EMAILJS_SERVICE_ID':JSON.stringify(process.env.VITE_REACT_APP_EMAILJS_SERVICE_ID),
-    'process.env.VITE_REACT_APP_EMAILJS_TEMPLATE_ID':JSON.stringify(process.env.VITE_REACT_APP_EMAILJS_TEMPLATE_ID)
+    'process.env.VITE_REACT_APP_EMAILJS_TEMPLATE_ID':JSON.stringify(process.env.VITE_REACT_APP_EMAILJS_TEMPLATE_ID),
+    'process.env.VITE_REACT_APP_DOMAIN':JSON.stringify(process.env.VITE_REACT_APP_DOMAIN),
+    'process.env.VITE_REACT_APP_CLIENT_ID':JSON.stringify(process.env.VITE_REACT_APP_CLIENT_ID)
   }
 })

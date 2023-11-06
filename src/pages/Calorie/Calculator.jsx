@@ -14,7 +14,7 @@ export default class Calculator extends Component {
 
   render() {
     return (
-      <div className="calculator flex flex-col lg:flex-row p-4 lg:p-8 space-y-4 lg:space-x-8 items-center justify-center lg:justify-between bg-gray-100 rounded-lg shadow-md w-[70rem] ml-[13rem]">
+      <div className="calculator flex flex-col lg:flex-row p-4 lg:p-8 space-y-4 lg:space-x-8 items-center justify-center lg:justify-between rounded-lg shadow-md w-[70rem] ml-[13rem]">
         <form onSubmit={this.props.handleSubmit} className="flex flex-col space-y-4  lg:w-2/3 w-full ">
 
           <SingleInput
@@ -26,6 +26,7 @@ export default class Calculator extends Component {
             placeholder="Age"
             required={true}
             className="p-2 border rounded focus:outline-none focus:border-blue-500"
+          
           />
 
           <div className="space-x-4">
