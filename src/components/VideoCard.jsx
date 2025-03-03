@@ -1,17 +1,18 @@
-import { Card } from "@material-tailwind/react";
 import React from "react";
 
-const VideoContainer = ({ videoUrl }) => {
+const VideoContainer = ({ videoId }) => {
   return (
-    <Card className="relative w-[60%] h-[500px] overflow-hidden rounded-xl shadow-lg border border-gray-200 mt-10">
-      <video
-        className="absolute inset-0 w-full h-full object-cover"
-        src={videoUrl}
-        autoPlay
-        loop
-        muted
-      ></video>
-    </Card>
+    <div className="relative w-full  h-[500px] overflow-hidden rounded-xl shadow-lg border border-gray-200">
+      <iframe
+        className="w-full h-full rounded-xl"
+        src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}`}
+        title="YouTube Video"
+       
+        allow="autoplay; encrypted-media; fullscreen"
+        allowFullScreen
+        
+      ></iframe>
+    </div>
   );
 };
 
