@@ -5,6 +5,18 @@ import {Dna} from 'react-loader-spinner';
 const Profile = () => { 
   const {user , isAuthenticated , isLoading} = useAuth0();  
   
+  if(isLoading){
+   return <div className="flex items-center justify-center h-screen">
+   <Dna
+     visible={true}
+     height="80"
+     width="80"
+     ariaLabel="dna-loading"
+     wrapperStyle={{}}
+     wrapperClass="dna-wrapper"
+   />
+ </div>;
+  }
  
  
   return (
@@ -15,7 +27,7 @@ const Profile = () => {
         
          style={{
             borderRadius:'50%',
-            width:'2.7rem',
+            width:'2rem',
             position:'relative',
             top:'0rem',
             marginLeft:'0.9rem',

@@ -12,8 +12,8 @@ const ThemeMode = (props) => {
   }, [theme])
 
   return (
-    <div className="text-2xl bg-slate-700 rounded-full">
-      <button className="p-3" onClick={() => setTheme((theme) => (theme === "dark" ? "light" : "dark"))}>
+    <div className="text-xl bg-slate-700 rounded-full">
+      <button className="p-1" onClick={() => setTheme((theme) => (theme === "dark" ? "light" : "dark"))}>
         {theme === "dark" ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
