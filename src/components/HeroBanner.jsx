@@ -65,6 +65,7 @@ import {
   Squares2X2Icon,
 } from "@heroicons/react/24/solid";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import VideoContainer from "./VideoCard";
 
 
 
@@ -105,7 +106,7 @@ function HeroBanner() {
       
       <header className="bg-white p-8">
         <div className="grid mt-16 min-h-[82vh] w-full lg:h-[54rem] md:h-[34rem] place-items-stretch bg-[url('/image/bg-hero-17.svg')] bg-center bg-contain bg-no-repeat">
-          <div className="container mx-auto px-4 text-center">
+          <div className="container mx-auto px-4 text-center flex flex-col items-center justify-start ">
             <Typography className="inline-flex text-xs rounded-lg border-[1.5px] border-blue-gray-50 bg-white py-1 lg:px-4  font-medium text-primary">
               Welcome 🎉 {user?.name &&  user?.name} to Fitness Fast.
             </Typography>
@@ -115,11 +116,11 @@ function HeroBanner() {
               className="mx-auto my-6 w-full leading-snug  !text-2xl lg:max-w-3xl lg:!text-5xl"
             >
               Get ready to push your{" "}
-              <span className="text-green-500 leading-snug ">
+              <span className="text-orange-500 leading-snug ">
                 limits
               </span>{" "}
               and achieve{" "}
-              <span className="leading-snug text-green-500">
+              <span className="leading-snug text-orange-500">
                 peak performance!💪🏋️‍♂️
               </span>
             </Typography>
@@ -144,6 +145,7 @@ function HeroBanner() {
                 </Link>
               </div>
             </div>
+            <VideoContainer videoUrl={'/video.webm'}/>
           </div>
         </div>
       </header>
