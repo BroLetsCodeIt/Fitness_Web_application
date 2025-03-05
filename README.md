@@ -1,6 +1,8 @@
 ---
 marp : true
 ---
+[Live Demo](https://fitness-web-application-4h6gytf0s-kamlesh-kaparvenas-projects.vercel.app/)
+
 # Welcome to Fitness Fast:
 
 ![image](https://github.com/BroLetsCodeIt/Fitness_Web_application/assets/113767803/09609fd9-d747-4d20-8809-0670059187fd)
